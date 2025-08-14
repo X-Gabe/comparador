@@ -11,4 +11,8 @@ Instalar as dependencias.
 
 - http://127.0.0.1:5000
 
-Ou instale o requirements.txt 
+Ou 
+
+Instale o requirements.txt 
+
+pip install -r requirements.txt
