@@ -46,3 +46,15 @@ button:hover {
   overflow-x: auto;
   margin-top: 20px;
 }
+
+.resultado-diff {
+    max-height: 500px;       /* Altura máxima visível */
+    overflow-y: auto;        /* Rolagem vertical */
+    overflow-x: hidden;      /* Remove rolagem horizontal */
+}
+/* Faz as células quebrarem linhas longas */
+table.diff td {
+    white-space: pre-wrap;   /* Mantém espaços e quebra linhas */
+    word-break: break-word;  /* Quebra palavras grandes */
+    max-width: 400px;        /* Largura máxima para a célula */
+}
