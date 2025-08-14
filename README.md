@@ -1,0 +1,2 @@
+# comparador
+Comparador de textos
