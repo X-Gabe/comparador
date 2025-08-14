@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultado da Comparação</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <style>
+      table.diff {
+        font-family: Courier;
+        border: medium;
+      }
+      .diff_header {
+        background-color: #e0e0e0;
+      }
+      td.diff_header {
+        text-align: right;
+      }
+      .diff_next {
+        background-color: #c0c0c0;
+      }
+      .diff_add {
+        background-color: #aaffaa;
+      }
+      .diff_chg {
+        background-color: #ffff77;
+      }
+      .diff_sub {
+        background-color: #ffaaaa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Resultado</h1>
+      <p><strong>Similaridade:</strong> {{ similaridade }}%</p>
+      <div class="resultado-diff">{{ diff_html|safe }}</div>
+      <a href="/">&#8592; Voltar</a>
+    </div>
+  </body>
+</html>
